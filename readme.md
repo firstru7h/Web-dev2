@@ -1,5 +1,6 @@
 Web Dev2 project
 OpenLFG
-	- Provide an external LFG tool across all games and platforms
-
+<ul>
+	<li>- Provide an external LFG tool across all games and platforms</li>
+</ul>
 current live address: http://ec2-54-172-28-134.compute-1.amazonaws.com/index.html
