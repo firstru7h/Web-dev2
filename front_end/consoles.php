@@ -39,13 +39,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand">OpenLFG</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="/index.php">Home</a></li>
+            <li><a href="/consoles.php">Consoles</a></li>
+            <li><a href="/contact.php">Contact</a></li>
+            <li><a href="/search.php">Search</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -56,10 +57,12 @@
       <div class="starter-template">
         <h1>Consoles</h1>
         <p class="lead">
-			Xbox One<br />
-			Playstation 4<br />
-			Wii U<br />
-			PC<br /></p>
+			<a href="/xbone.php">Xbox One</a><br />
+			<a href="/ps4.php">Playstation 4<br />
+			<a href="/wiiu.php">Wii U<br />
+			<a href="/pc.php">PC<br />
+			<a href="/other.php">Other<br />
+		</p>
       </div>
 
     </div><!-- /.container -->
