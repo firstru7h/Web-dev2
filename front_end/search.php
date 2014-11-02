@@ -60,13 +60,13 @@ require("utils.php");
         <h1>Search</h1>
         <p class="lead">
 			<form action="" method="">
-			    Console: <?php "<select name='consoles' id='consoles'>\n
-			    				<option value='Xbox One'>Xbox One</option>\n
-			    				<option value='Playstation 4'>Playstation 4</option>\n
-			    				<option value='Xbox 360'>Xbox 360</option>\n
-			    				<option value='Playstation 3'>Playstation 4</option>\n
-			    				<option value='PC'>PC</option>\n
-			    				</select>\n"?>
+			    Console: <select name='consoles' id='consoles'>
+			    				<option value='Xbox One'>Xbox One</option>
+			    				<option value='Playstation 4'>Playstation 4</option>
+			    				<option value='Xbox 360'>Xbox 360</option>
+			    				<option value='Playstation 3'>Playstation 4</option>
+			    				<option value='PC'>PC</option>
+			    		</select>
 			 <br /><br /> 
 			   Username: <input type="text" name="author" /><br /><br />
 			 Post Title: <input type="text" name="ptitle" /><br /><br />
