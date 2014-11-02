@@ -70,9 +70,10 @@ require("utils.php");
 			 <br /><br /> 
 			  Post Title: <input type="text" name="ptitle" /><br /><br />
 			Game Title: <input type="text" name="gtitle" /><br /><br />
-			<a href='results.php'>
-			<input type="submit" value="Search" />
-			</a>
+			</form>
+			
+			<form action='results.php'>
+				<input type="submit" value="Search" />
 			</form>
 		</p>
       </div>

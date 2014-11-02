@@ -55,7 +55,7 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>PC</h1>
+        <h1>Results</h1>
         <p class="lead">List of search results here</p>
       </div>
 
