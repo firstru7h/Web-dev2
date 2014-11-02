@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>OpenLFG - Contact</title>
+    <title>OpenLFG - Post</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -55,8 +54,32 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Contact</h1>
-        <p class="lead">Some ways to contact us:</p>
+        <h1>Post Message</h1>
+        <p class="lead">
+        Post Title:  <input type="text" name="ptitle" /><br /><br />
+          Username:  <input type="text" name="username" /><br /><br />
+        Game Title: <input type="text" name="gtitle" /><br /><br />
+        Console: <select name='consoles' id='consoles'>
+			    				<option value='Xbox One'>Xbox One</option>
+			    				<option value='Playstation 4'>Playstation 4</option>
+			    				<option value='Xbox 360'>Xbox 360</option>
+			    				<option value='Playstation 3'>Playstation 3</option>
+			    				<option value='PC'>PC</option>
+			     </select>
+			     <br /><br />
+		Region: <select name='regions' id='regions'>
+			    				<option value='North America'>North America</option>
+			    				<option value='Europe'>Europe</option>
+			    				<option value='South America'>South America</option>
+			    				<option value='Other'>Other</option>
+			     </select>
+			     <br /><br />
+		Description:  <input type="text" name="description" /><br /><br />
+			     <br /><br />
+        	<form action='results.php'>
+				<input type="submit" value="post" />
+			</form>
+        </p>
       </div>
 
     </div><!-- /.container -->

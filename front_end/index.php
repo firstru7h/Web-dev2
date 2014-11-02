@@ -44,9 +44,9 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/index.php">Home</a></li>
-            <li><a href="/consoles.php">Consoles</a></li>
             <li><a href="/contact.php">Contact</a></li>
             <li><a href="/search.php">Search</a></li>
+            <li><a href="/post.php">Post</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -56,7 +56,11 @@
 
       <div class="starter-template">
         <h1>OpenLFG</h1>
-        <p class="lead">Support for every system and every game.</p>
+        <p class="lead">
+        	Support for every system and every game.<br /><br />
+        	<a href="/post.php">Post a request</a><br />
+        	<a href="/search.php">Search requests</a>
+        </p>
       </div>
 
     </div><!-- /.container -->

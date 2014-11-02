@@ -1,5 +1,4 @@
 <?php
-require("utils.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,9 +45,9 @@ require("utils.php");
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/index.php">Home</a></li>
-            <li><a href="/consoles.php">Consoles</a></li>
             <li><a href="/contact.php">Contact</a></li>
             <li><a href="/search.php">Search</a></li>
+            <li><a href="/post.php">Post</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -60,15 +59,15 @@ require("utils.php");
         <h1>Search</h1>
         <p class="lead">
 			<form action="" method="">
-			    Console: <select name='consoles' id='consoles'>
+			Console: <select name='consoles' id='consoles'>
 			    				<option value='Xbox One'>Xbox One</option>
 			    				<option value='Playstation 4'>Playstation 4</option>
 			    				<option value='Xbox 360'>Xbox 360</option>
 			    				<option value='Playstation 3'>Playstation 3</option>
 			    				<option value='PC'>PC</option>
-			    		</select>
+			    	 </select>
 			 <br /><br /> 
-			  Post Title: <input type="text" name="ptitle" /><br /><br />
+			Post Title:  <input type="text" name="ptitle" /><br /><br />
 			Game Title: <input type="text" name="gtitle" /><br /><br />
 			</form>
 			
