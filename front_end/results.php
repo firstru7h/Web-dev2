@@ -1,6 +1,4 @@
-<?php
-require("utils.php");
-?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +9,7 @@ require("utils.php");
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>OpenLFG - Search</title>
+    <title>OpenLFG - Search Results</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -57,24 +55,8 @@ require("utils.php");
     <div class="container">
 
       <div class="starter-template">
-        <h1>Search</h1>
-        <p class="lead">
-			<form action="" method="">
-			    Console: <select name='consoles' id='consoles'>
-			    				<option value='Xbox One'>Xbox One</option>
-			    				<option value='Playstation 4'>Playstation 4</option>
-			    				<option value='Xbox 360'>Xbox 360</option>
-			    				<option value='Playstation 3'>Playstation 3</option>
-			    				<option value='PC'>PC</option>
-			    		</select>
-			 <br /><br /> 
-			  Post Title: <input type="text" name="ptitle" /><br /><br />
-			Game Title: <input type="text" name="gtitle" /><br /><br />
-			<a href='results.php'>
-			<input type="submit" value="Search" />
-			</a>
-			</form>
-		</p>
+        <h1>PC</h1>
+        <p class="lead">List of search results here</p>
       </div>
 
     </div><!-- /.container -->
