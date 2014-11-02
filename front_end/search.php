@@ -1,4 +1,6 @@
-
+<?php
+require("utils.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -58,11 +60,11 @@
         <h1>Search</h1>
         <p class="lead">
 			<form action="" method="">
-			Console: <input type="text" name="console" /><br />
-			Author: <input type="text" name="author" /><br />
-			Date: <input type="text" name="date" /><br />
-			Post Title: <input type="text" name="ptitle" /><br />
-			Game Title: <input type="text" name="gtitle" /><br />
+			    Console: <?php dropdown("colors",array("consoles" => "Xbox One", "Play Station 4", "Xbox 360" , "Play Station 3", "PC"));?><br />
+			 <br /><br /> 
+			   Username: <input type="text" name="author" /><br /><br />
+			 Post Title: <input type="text" name="ptitle" /><br /><br />
+			Game Title: <input type="text" name="gtitle" /><br /><br />
 			<input type="submit" value="Search" />
 			</form>
 		</p>
