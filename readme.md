@@ -1,3 +1,6 @@
+<style>
+.data a, .data span, .data tr, .data td { white-space: pre; }
+</style>
 Web Dev2 project<br />
 OpenLFG<br />
 Current live address: http://ec2-54-172-28-134.compute-1.amazonaws.com/index.html<br />
@@ -16,6 +19,7 @@ Current live address: http://ec2-54-172-28-134.compute-1.amazonaws.com/index.htm
 </ul>
 <br />
 Output of describe Posts; <br />
+<div class="data">
 +----------+--------------+------+-----+---------+----------------+<br />
 | Field    | Type         | Null | Key | Default | Extra          |<br />
 +----------+--------------+------+-----+---------+----------------+<br />
@@ -28,3 +32,4 @@ Output of describe Posts; <br />
 | Note     | varchar(140) | YES  |     | NULL    |                |<br />
 | PostTime | datetime     | NO   |     | NULL    |                |<br />
 +----------+--------------+------+-----+---------+----------------+<br />
+</div>
