@@ -9,7 +9,6 @@ Current live address: http://ec2-54-172-28-134.compute-1.amazonaws.com/index.htm
 	<li> Build triggers/stored procedure to automatically delete records 30-60 mins after insert</li>
 	<li> Flesh out front end site</li>
 </ul>
-<br />
 <hr>
 <ul> Development information:
 	<li> MySQL statements are case sensitive
@@ -17,15 +16,15 @@ Current live address: http://ec2-54-172-28-134.compute-1.amazonaws.com/index.htm
 </ul>
 <br />
 Output of describe Posts; <br />
-+----------+--------------+------+-----+---------+----------------+
-| Field    | Type         | Null | Key | Default | Extra          |
-+----------+--------------+------+-----+---------+----------------+
-| PostID   | int(11)      | NO   | PRI | NULL    | auto_increment |
-| Region   | varchar(20)  | NO   |     | NULL    |                |
-| Platform | varchar(20)  | NO   |     | NULL    |                |
-| Game     | varchar(45)  | NO   |     | NULL    |                |
-| Event    | varchar(45)  | NO   |     | NULL    |                |
-| Username | varchar(45)  | NO   |     | NULL    |                |
-| Note     | varchar(140) | YES  |     | NULL    |                |
-| PostTime | datetime     | NO   |     | NULL    |                |
-+----------+--------------+------+-----+---------+----------------+
++----------+--------------+------+-----+---------+----------------+<br />
+| Field    | Type         | Null | Key | Default | Extra          |<br />
++----------+--------------+------+-----+---------+----------------+<br />
+| PostID   | int(11)      | NO   | PRI | NULL    | auto_increment |<br />
+| Region   | varchar(20)  | NO   |     | NULL    |                |<br />
+| Platform | varchar(20)  | NO   |     | NULL    |                |<br />
+| Game     | varchar(45)  | NO   |     | NULL    |                |<br />
+| Event    | varchar(45)  | NO   |     | NULL    |                |<br />
+| Username | varchar(45)  | NO   |     | NULL    |                |<br />
+| Note     | varchar(140) | YES  |     | NULL    |                |<br />
+| PostTime | datetime     | NO   |     | NULL    |                |<br />
++----------+--------------+------+-----+---------+----------------+<br />
