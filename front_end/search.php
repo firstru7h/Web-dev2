@@ -58,7 +58,7 @@
       <div class="starter-template">
         <h1>Search</h1>
         <p class="lead">
-			<form action="" method="">
+			<form action='results.php'>
 			Console: <select name='consoles' id='consoles'>
 			    				<option value='Xbox One'>Xbox One</option>
 			    				<option value='Playstation 4'>Playstation 4</option>
@@ -67,12 +67,17 @@
 			    				<option value='PC'>PC</option>
 			    	 </select>
 			 <br /><br /> 
+			 Region: <select name='regions' id='regions'>
+			    				<option value='North America'>North America</option>
+			    				<option value='Europe'>Europe</option>
+			    				<option value='South America'>South America</option>
+			    				<option value='Other'>Other</option>
+			    				<option value='Search All Regions'>Search All Regions</option>
+			         </select>
 			Post Title:  <input type="text" name="ptitle" /><br /><br />
 			Game Title: <input type="text" name="gtitle" /><br /><br />
-			</form>
 			
-			<form action='results.php'>
-				<input type="submit" value="Search" />
+			<input type="submit" value="post" />
 			</form>
 		</p>
       </div>

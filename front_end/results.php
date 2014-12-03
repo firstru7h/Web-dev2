@@ -57,6 +57,10 @@
       <div class="starter-template">
         <h1>Results</h1>
         <p class="lead">List of search results here</p>
+        <?php
+        	require_once('utils.php'); 
+        	createTable(); 
+        ?>
       </div>
 
     </div><!-- /.container -->
