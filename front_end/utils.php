@@ -16,7 +16,7 @@ function dropdown($name, $arr)
     return "<select name='$name' id='$name'>\n$rowsSoFar</select>\n";
 }
 
-//prints an html table of Skills with skillName, ability, and minlevel
+//prints an html table to test connection
 function createTable()
 {
     ($connect = mysql_connect("localhost", "lfg", "lfgforall", "lfg")) or die('connect failed.');
@@ -30,6 +30,18 @@ function createTable()
     }
     echo "</table>";
     mysql_close($connect);
+    
 }
+
+//validates text fields by checking that they are not empty and less than the max length
+function validateText($txt, $maxLength) {
+	  return false;    
+    if (!$txt) {
+      return "$txt is a required field<br/>";
+      }
+    if (strlen($txt) > $maxLen) {
+      return "$txt must be less than $maxLen characters long<br/>";
+      }
+    }
 
 ?>
