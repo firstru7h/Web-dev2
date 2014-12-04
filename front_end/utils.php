@@ -40,7 +40,7 @@ function createTable($whereStatements)
 function createEntry()
 {
     ($conn = mysqli_connect("localhost", "lfg", "lfgforall", "OpenLFG")) or die('Database Connection Failed. Please wait and try again.');
-	mysqli_close($conn);
+	
 	$region = specialCharCheck($_POST['regions']);
 	$platform = specialCharCheck($_POST['consoles']);
 	$game = specialCharCheck($_POST['gtitle']);
