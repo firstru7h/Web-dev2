@@ -63,8 +63,8 @@
 			{
   				$_POST[$key] = ($val);
  			}
-  			$regionName = htmlspecialchars($_GET['Region']);
-  			$platformName = htmlspecialchars($_GET['Platform']);
+  			$regionName = htmlspecialchars($_GET['regions']);
+  			$platformName = htmlspecialchars($_GET['consoles']);
   			$gameName = htmlspecialchars($_GET['gtitle']);
   			$noteName = htmlspecialchars($_GET['ptitle']);
   			$where = " where Platform ='".$platformName."'";
