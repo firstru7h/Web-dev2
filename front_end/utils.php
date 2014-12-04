@@ -19,14 +19,13 @@ function dropdown($name, $arr)
 //prints an html table to test connection
 function createTable()
 {
-    ($connect = mysql_connect("localhost", "lfg", "lfgforall", "lfg")) or die('connect failed.');
-    $table = mysql_query($connect, "select * from OpenLFG.Posts");
+    ($connect = mysqli_connect("localhost", "lfg", "lfgforall", "OpenLFG")) or die('connect failed.');
+    $table = mysqli_query($connect, "select * from OpenLFG.Posts");
     echo "<table class='mytable' border='3px'>";
     echo "<tr><td>PostID</td><td>Region</td><td>Platform</td></tr>"; 
-    while($row = mysql_fetch_array($table))
+    while($row = mysqli_fetch_array($table))
     { 
-        $rowSkill = $row['skillName'];
-        echo "<tr><td>" . $row['PostID'] . "</a></td><td>" . $row['Region'] . "</td><td>" . $row['Platform'] . "</td></tr>"; 
+        echo "<tr><td>" . $row['PostID'] . "</td><td>" . $row['Region'] . "</td><td>" . $row['Platform'] . "</td></tr>"; 
     }
     echo "</table>";
     mysql_close($connect);
