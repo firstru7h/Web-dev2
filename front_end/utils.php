@@ -51,7 +51,7 @@ function createEntry()
 	
 	$qu = 'INSERT INTO Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$plaform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
 	$ins = mysqli_query($conn, $qu);
-	
+	echo "test";
 	if ($ins)
 	{
 		echo "<table class='mytableN'>";
