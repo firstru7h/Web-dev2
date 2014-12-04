@@ -51,10 +51,10 @@ function createEntry()
 	
 	$qu = 'INSERT INTO Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$plaform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
 	$ins = mysqli_query($conn, $qu);
-	echo "<p>test</p>";
+	
 	if ($ins)
 	{
-		echo "<table class='mytableN'>";
+		echo "<table class='mytableNew'>";
 		while($row = mysql_fetch_array($ins))
 		{ 
 			echo "<tr><td colspan='3' class='title'>" . $row['Event'] . "</td></tr>";
