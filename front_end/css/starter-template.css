@@ -5,3 +5,40 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+
+.mytableN{
+  padding:0px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 1.3em;
+}
+.sty{
+  background-color: rgb(34,34,34);
+  color: white;
+}
+.side{
+  border:0px;
+  vertical-align: top;
+}
+.middle{
+  border:0px;
+  width: 100%;
+}
+.title{
+  background-color: rgb(34,34,34);
+  color: white;
+  text-align:center;
+}
+.left{
+  text-align:left;
+  border-right:0px;
+}
+.right{
+  text-align:right;
+  border-left:0px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

@@ -56,7 +56,7 @@
       <div class="starter-template">
         <h1>Post Message</h1>
         <p class="lead">
-        <form action='results.php'>
+        <form action='submission.php'>
         Post Title:  <input type="text" name="ptitle" /><br /><br />
           Username:  <input type="text" name="username" /><br /><br />
         Game Title: <input type="text" name="gtitle" /><br /><br />

@@ -36,6 +36,43 @@ function createTable($whereStatements)
     
 }
 
+//adds entry to database for later retrieval. If successful, prints the entry, else returns error.
+function createEntry()
+{
+    ($conn = mysqli_connect("localhost", "lfg", "lfgforall", "Openlfg") or die('Database Connection Failed. Please wait and try again.'));
+	
+	$region = specialCharCheck($_POST['regions']);
+	$platform = specialCharCheck($_POST['consoles']);
+	$game = specialCharCheck($_POST['gtitle']);
+	$event = specialCharCheck($_POST['ptitle']);
+	$username = specialCharCheck($_POST['username']);
+	$note = nl2br(specialCharCheck($_POST['description']));
+	$postTime = date("Y-m-d H:i:s", $phptime);
+	
+	$qu = 'INSERT INTO Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$plaform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
+	$ins = mysqli_query($conn, $qu);
+	
+	if ($ins)
+	{
+		echo "<table class='mytableN'>";
+		while($row = mysql_fetch_array($ins))
+		{ 
+			echo "<tr><td colspan='3' class='title'>" . $row['Event'] . "</td></tr>";
+			echo "<tr><td colspan='3' class='title'>" . $row['Game'] . "</td></tr>";
+			echo "<tr><td class='side'>" . $row['Platform'] . "<br />" . $row['Region'] . "</td><td rowspan='2' colspan='2' class='descrip'>" . $row['note'] . "</td></tr>";
+			echo "<tr><td class='side'> </td>";
+			echo "<tr class='sty'><td class='left'>" . $row['PostID'] . "</td><td> class='middle'></td><td class='right'>" . $row['PostTime'] . "</td></tr>";
+		}
+		echo "</table>";
+	}
+	else
+	{
+		echo "<p class='lead'>There was a problem with submitting the post. Please go back and try again.</p>";
+	}
+    
+    mysql_close($conn);
+}
+
 //validates text fields by checking that they are not empty and less than the max length
 function validateText($txt, $maxLength) {
 	  return false;    
@@ -46,5 +83,16 @@ function validateText($txt, $maxLength) {
       return "$txt must be less than $maxLen characters long<br/>";
       }
     }
+	
+	/**
+	 * return string that checks if magic quotes is true, strip slashes from 
+	 * input (if false keep original input) then run htmlspecial chars
+	 * @param $input a string
+	 */
+	function specialCharCheck($input)
+	{
+		$pattern = '/\\\\n/';
+		return preg_replace($pattern, '', htmlspecialchars((get_magic_quotes_gpc() ? stripslashes($input) : $input)));
+	}
 
 ?>
