@@ -17,15 +17,19 @@ function dropdown($name, $arr)
 }
 
 //prints an html table to test connection
-function createTable()
+function createTable($whereStatements)
 {
     ($connect = mysqli_connect("localhost", "lfg", "lfgforall", "OpenLFG")) or die('connect failed.');
-    $table = mysqli_query($connect, "select * from OpenLFG.Posts");
+    $table = mysqli_query($connect, "select * from OpenLFG.Posts".$whereStatements);
     echo "<table class='mytable' border='3px'>";
-    echo "<tr><td>PostID</td><td>Region</td><td>Platform</td></tr>"; 
+    echo "<tr><td>PostID</td><td>Region</td><td>Platform</td><td>Game</td><td>Event</td>
+    	  <td>Username</td><td>Note</td><td>Post Time</td></tr>"; 
     while($row = mysqli_fetch_array($table))
     { 
-        echo "<tr><td>" . $row['PostID'] . "</td><td>" . $row['Region'] . "</td><td>" . $row['Platform'] . "</td></tr>"; 
+        echo "<tr><td>" . htmlspecialchars($row['PostID']) . "</td><td>" . htmlspecialchars($row['Region']) . "</td><td>" 
+        	. htmlspecialchars($row['Platform']) . "</td><td>" . htmlspecialchars($row['Game']) . "</td><td>" . htmlspecialchars($row['Event']) 
+       	    . "</td><td>" . htmlspecialchars($row['Username']) . "</td><td>" . htmlspecialchars($row['Note']) . "</td><td>" 
+       	    . $row['PostTime'] . "</td></tr>"; 
     }
     echo "</table>";
     mysql_close($connect);
