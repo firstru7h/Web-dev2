@@ -39,7 +39,7 @@ function createTable($whereStatements)
 //adds entry to database for later retrieval. If successful, prints the entry, else returns error.
 function createEntry()
 {
-    ($conn = mysqli_connect("localhost", "lfg", "lfgforall", "OpenLFG") or die('Database Connection Failed. Please wait and try again.'));
+    ($conn = mysqli_connect("localhost", "lfg", "lfgforall", "OpenLFG")) or die('Database Connection Failed. Please wait and try again.');
 	
 	$region = specialCharCheck($_POST['regions']);
 	$platform = specialCharCheck($_POST['consoles']);
