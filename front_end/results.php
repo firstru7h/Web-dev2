@@ -68,11 +68,11 @@
   			$gameName = htmlspecialchars($_GET['gtitle']);
   			$noteName = htmlspecialchars($_GET['ptitle']);
   			$where = " where Platform ='".$platformName."'";
-  			if ($regionName == "Search All Regions")
-  			{
-  				$where .= "";
-  			}
-  			else $where .= " and Region ='".$regionName."'";
+  			//if ($regionName == "Search All Regions")
+  			//{
+  			//	$where .= "";
+  			//}
+  			//else $where .= " and Region ='".$regionName."'";
   			//$where .= " and Note like '%".$noteName."%' and Game like '%".$gameName."%'";
   			
   			
