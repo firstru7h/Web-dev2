@@ -40,7 +40,7 @@ function createTable($whereStatements)
 function createEntry()
 {
     ($conn = mysqli_connect("localhost", "lfg", "lfgforall", "OpenLFG")) or die('Database Connection Failed. Please wait and try again.');
-	
+	mysqli_close($conn);
 	$region = specialCharCheck($_POST['regions']);
 	$platform = specialCharCheck($_POST['consoles']);
 	$game = specialCharCheck($_POST['gtitle']);
@@ -70,7 +70,7 @@ function createEntry()
 		echo "<p class='lead'>There was a problem with submitting the post. Please go back and try again.</p>";
 	}
     
-    mysql_close($conn);
+    mysqli_close($conn);
 }
 
 //validates text fields by checking that they are not empty and less than the max length
