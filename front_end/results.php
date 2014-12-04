@@ -66,13 +66,13 @@
   			$regionName = htmlspecialchars($_GET['regions']);
   			$platformName = htmlspecialchars($_GET['consoles']);
   			$gameName = htmlspecialchars($_GET['gtitle']);
-  			$noteName = htmlspecialchars($_GET['ptitle']);
+  			$noteName = htmlspecialchars($_GET['note']);
   			$where = " where Platform ='".$platformName."'";
-  			//if ($regionName == "Search All Regions")
-  			//{
-  			//	$where .= "";
-  			//}
-  			//else $where .= " and Region ='".$regionName."'";
+  			if ($regionName == "Search All Regions")
+  			{
+  				$where .= "";
+  			}
+  			else $where .= " and Region ='".$regionName."'";
   			//$where .= " and Note like '%".$noteName."%' and Game like '%".$gameName."%'";
   			
   			echo $where;//checking query

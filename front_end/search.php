@@ -79,11 +79,11 @@
 					 
 			Post Title:  <input type="text" name="ptitle" /><br /><br />
 			
-			Description:  <input type="text" name="ptitle" /><br /><br />
+			Description:  <input type="text" name="note" /><br /><br />
 			
 			Game Title: <input type="text" name="gtitle" /><br /><br />
 			
-			<input type="submit" value="post" />
+			<input type="submit" value="search" />
 			</form>
 		</p>
       </div>
