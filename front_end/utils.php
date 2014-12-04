@@ -54,11 +54,8 @@ function createEntry()
 	echo "test";
 	if ($ins)
 	{
-		$qu = 'SELECT * FROM OpenLFG.Posts WHERE Region="'.$region.'", Platform="'.$platform.'", Game="'.$game.'", Event="'.$event.'", Username="'.$username.'", Note="'.$note.'", PostTime="'.$postTime.'"';
-		echo "test";
-		$table = mysqli_query($conn, $qu);
 		echo "<table class='mytableN'>";
-		while($row = mysql_fetch_array($table))
+		while($row = mysql_fetch_array($ins))
 		{ 
 			echo "<tr><td colspan='3' class='title'>" . $row['Event'] . "</td></tr>";
 			echo "<tr><td colspan='3' class='title'>" . $row['Game'] . "</td></tr>";
