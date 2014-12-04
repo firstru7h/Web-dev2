@@ -73,7 +73,7 @@
   				$where .= "";
   			}
   			else $where .= " and Region ='".$regionName."'";
-  			//$where .= " and Note like '%".$noteName."%' and Game like '%".$gameName."%'";
+  			$where .= " and Note like '%".$noteName."%' and Game like '%".$gameName."%'";
   			
   			echo $where;//checking query
   			
