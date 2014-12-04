@@ -57,8 +57,26 @@
       <div class="starter-template">
         <h1>Results of Post</h1>
         <?php
-        	require_once('utils.php'); 
-        	createEntry();
+        	require_once('utils.php');
+			
+			foreach ($_POST AS $key=>$val) 
+			{
+  				$_POST[$key] = ($val);
+ 			}
+  			$regionName = htmlspecialchars($_GET['regions']);
+  			$platformName = htmlspecialchars($_GET['consoles']);
+  			$gameName = htmlspecialchars($_GET['gtitle']);
+  			$noteName = htmlspecialchars($_GET['ptitle']);
+  			$where = " where Platform ='".$platformName."'";
+  			if ($regionName == "Search All Regions")
+  			{
+  				$where .= "";
+  			}
+  			else $where .= " and Region ='".$regionName."'";
+  			//$where .= " and Note like '%".$noteName."%' and Game like '%".$gameName."%'";
+  			
+  			
+        	createTable($where);
         ?>
       </div>
 

@@ -74,7 +74,11 @@
 			    				<option value='Other'>Other</option>
 			    				<option value='Search All Regions'>Search All Regions</option>
 			         </select>
+					 
 			Post Title:  <input type="text" name="ptitle" /><br /><br />
+			
+			Description:  <input type="text" name="ptitle" /><br /><br />
+			
 			Game Title: <input type="text" name="gtitle" /><br /><br />
 			
 			<input type="submit" value="post" />
