@@ -51,10 +51,12 @@ function createEntry()
 	
 	$qu = 'INSERT INTO Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$plaform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
 	$ins = mysqli_query($conn, $qu);
-	echo "testing";
+	
 	if ($ins)
 	{
 		$qu = 'SELECT * FROM OpenLFG.Posts WHERE Region="'.$region.'", Platform="'.$platform.'", Game="'.$game.'", Event="'.$event.'", Username="'.$username.'", Note="'.$note.'", PostTime="'.$postTime.'"';
+		
+		echo "" . $qu;
 		$table = mysqli_query($conn, $qu);
 		
 		echo "<table class='mytableN'>";
