@@ -55,7 +55,7 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Results of Post</h1>
+        <h1>Search Results</h1>
         <?php
         	require_once('utils.php');
 			
@@ -75,6 +75,7 @@
   			//else $where .= " and Region ='".$regionName."'";
   			//$where .= " and Note like '%".$noteName."%' and Game like '%".$gameName."%'";
   			
+  			echo $where;//checking query
   			
         	createTable($where);
         ?>
