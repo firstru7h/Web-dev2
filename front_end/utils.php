@@ -41,12 +41,12 @@ function createEntry()
 {
     ($conn = mysqli_connect("localhost", "lfg", "lfgforall", "OpenLFG")) or die('Database Connection Failed. Please wait and try again.');
 	
-	$region = specialCharCheck($_POST['regions']);
-	$platform = specialCharCheck($_POST['consoles']);
-	$game = specialCharCheck($_POST['gtitle']);
-	$event = specialCharCheck($_POST['ptitle']);
-	$username = specialCharCheck($_POST['username']);
-	$note = nl2br(specialCharCheck($_POST['description']));
+	$region = specialCharCheck($_GET['regions']);
+	$platform = specialCharCheck($_GET['consoles']);
+	$game = specialCharCheck($_GET['gtitle']);
+	$event = specialCharCheck($_GET['ptitle']);
+	$username = specialCharCheck($_GET['username']);
+	$note = nl2br(specialCharCheck($_GET['description']));
 	$postTime = date("Y-m-d H:i:s");
 	
 	$qu = 'INSERT INTO Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$plaform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
