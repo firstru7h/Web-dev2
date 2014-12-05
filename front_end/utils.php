@@ -66,7 +66,7 @@ function createEntry()
 			echo "<tr><td colspan='2' class='title'>" . $row['Game'] . "</td></tr>";
 			echo "<tr><td class='side'>" . $row['Platform'] . "<br />" . $row['Region'] . "</td><td rowspan='2' class='descrip'>" . $row['Note'] . "</td></tr>";
 			echo "<tr><td class='side'> </td>";
-			echo "<tr class='sty'><td colspan='2'><div class='left'>" . $row['PostID'] . "</div><div class='right'>" . $row['PostTime'] . "</td></tr>";
+			echo "<tr class='sty'><td colspan='2'><div class='left'>OpenLFG</div><div class='right'>" . $row['PostTime'] . "</td></tr>";
 		}
 		echo "</table>";
 	}
