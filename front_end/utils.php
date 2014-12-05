@@ -62,11 +62,11 @@ function createEntry()
 		echo "<table class='mytableN'>";
 		while($row = mysqli_fetch_array($table))
 		{ 
-			echo "<tr><td colspan='3' class='title'>" . $row['Event'] . "</td></tr>";
-			echo "<tr><td colspan='3' class='title'>" . $row['Game'] . "</td></tr>";
-			echo "<tr><td class='side'>" . $row['Platform'] . "<br />" . $row['Region'] . "</td><td rowspan='2' colspan='2' class='descrip'>" . $row['note'] . "</td></tr>";
+			echo "<tr><td colspan='2' class='title'>" . $row['Event'] . "</td></tr>";
+			echo "<tr><td colspan='2' class='title'>" . $row['Game'] . "</td></tr>";
+			echo "<tr><td class='side'>" . $row['Platform'] . "<br />" . $row['Region'] . "</td><td rowspan='2' class='descrip'>" . $row['Note'] . "</td></tr>";
 			echo "<tr><td class='side'> </td>";
-			echo "<tr class='sty'><td class='left'>" . $row['PostID'] . "</td><td class='middle'></td><td class='right'>" . $row['PostTime'] . "</td></tr>";
+			echo "<tr class='sty'><td colspan='2'><div class='left'>" . $row['PostID'] . "</div><div class='right'>" . $row['PostTime'] . "</td></tr>";
 		}
 		echo "</table>";
 	}
