@@ -9,9 +9,9 @@ body {
 
 .mytableN{
   padding:0px;
-  width: 100%;
   margin-left: 20%;
   margin-right: 20%;
+  width: 100%;
   font-size: 1.3em;
 }
 .sty{
@@ -29,11 +29,11 @@ body {
   text-align:center;
 }
 .left{
-  text-align:left;
+  float:left;
   border-right:0px;
 }
 .right{
-  text-align:right;
+  float:right;
   border-left:0px;
 }
 table, th, td {
