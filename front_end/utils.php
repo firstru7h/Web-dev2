@@ -48,7 +48,7 @@ function createEntry()
 	$username = specialCharCheck($_GET['username']);
 	$note = nl2br(specialCharCheck($_GET['description']));
 	$postTime = date("Y-m-d H:i:s");
-	echo "check me";
+	echo "check me2";
 	$qu = 'INSERT INTO Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$plaform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
 	$ins = mysqli_query($conn, $qu);
 	
