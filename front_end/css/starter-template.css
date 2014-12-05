@@ -21,6 +21,7 @@ body {
 }
 .side{
   border:0px;
+  width: 20%;
   vertical-align: top;
 }
 .title{
