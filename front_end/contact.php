@@ -57,7 +57,7 @@
       <div class="starter-template">
         <h1>Contact</h1>
         <p class="lead">Some ways to contact us:</p>
-		<p> <a href="mailto:openlfg.webdev2@gmail.com?Subject=OpenLFG" target="_top">openlfg.webdev2@gmail.com</a>
+		<p> <a href="mailto:openlfg.webdev2@gmail.com" target="_top">openlfg.webdev2@gmail.com</a>
       </div>
 
     </div><!-- /.container -->
