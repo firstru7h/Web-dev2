@@ -1,0 +1,10 @@
+| Display Name	|	Submit Name
+-----------------------------------
+| Playstation 4	|	PS4	  |
+| Playstation 3	|	PS3	  |
+| Xbox One	|	XB1	  |
+| Xbox 360	|	XB360	  |
+| PC		|	PC	  |
+| Wii U		|	WiiU	  |
+| Nintendo 3DS	|	3DS	  |
++---------------------------------+
