@@ -48,7 +48,7 @@ function createEntry()
 	$username = specialCharCheck($_GET['username']);
 	$note = nl2br(specialCharCheck($_GET['description']));
 	$postTime = date("Y-m-d H:i:s");
-	echo "check me";
+	echo "check mesfs";
 	$qu = 'INSERT INTO OpenLFG.Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$platform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
 	$ins = mysqli_query($conn, $qu);
 	
