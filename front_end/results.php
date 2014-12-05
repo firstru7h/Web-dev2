@@ -75,7 +75,8 @@
   			else $where .= " and Region ='".$regionName."'";
   			$where .= " and Note like '%".$noteName."%' and Game like '%".$gameName."%'";
   			
-  			echo $where;//checking query
+  			//echo $where;
+  			//uncomment to check query
   			
         	createTable($where);
         ?>
