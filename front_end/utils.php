@@ -72,7 +72,7 @@ function createEntry()
 	}
 	else
 	{
-		echo "<p class='lead'>There was a problem with submitting the post. Please go back and try again.</p>";
+		echo "<p class='lead'>There was a problem with submitting the post. Make sure you filled in all fields.</p>";
 	}
     
     mysqli_close($conn);
