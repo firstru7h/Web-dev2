@@ -48,14 +48,15 @@ function createEntry()
 	$username = specialCharCheck($_GET['username']);
 	$note = nl2br(specialCharCheck($_GET['description']));
 	$postTime = date("Y-m-d H:i:s");
-	echo "check me now";
-	$qu = 'INSERT INTO Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$plaform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
+	echo "check me ndfgeg";
+	$qu = 'INSERT INTO OpenLFG.Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$platform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
 	$ins = mysqli_query($conn, $qu);
 	
 	if ($ins)
 	{
 		//$qu = 'SELECT * FROM OpenLFG.Posts WHERE Region="'.$region.'" AND Platform="'.$platform.'" AND Game="'.$game.'" AND Event="'.$event.'" AND Username="'.$username.'" AND PostTime="'.$postTime.'"';
-		$qu = 'SELECT * FROM Posts WHERE Username = "Akbar"';
+		$qu = 'SELECT * FROM 
+		Posts WHERE Username = "Akbar"';
 		$table = mysqli_query($conn, $qu);
 		
 		echo "<table class='mytableN'>";
