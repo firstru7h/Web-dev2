@@ -47,12 +47,13 @@ function createEntry()
 	$event = specialCharCheck($_GET['ptitle']);
 	$username = specialCharCheck($_GET['username']);
 	$note = nl2br(specialCharCheck($_GET['description']));
+	date_default_timezone_set('America/New_York');
 	$postTime = date("Y-m-d H:i:s");
 	echo "check rgrgrf";
 	$qu = 'INSERT INTO OpenLFG.Posts (Region, Platform, Game, Event, Username, Note, PostTime) VALUES ("'.$region.'", "'.$platform.'", "'.$game.'", "'.$event.'", "'.$username.'", "'.$note.'", "'.$postTime.'")';
 	$ins = mysqli_query($conn, $qu);
 	
-	if ($ins)
+	if ($ins and !($region == "" or $platform == "" or $game == "" or $event == "" or $username == ""))
 	{
 		//$qu = 'SELECT * FROM OpenLFG.Posts WHERE Region="'.$region.'" AND Platform="'.$platform.'" AND Game="'.$game.'" AND Event="'.$event.'" AND Username="'.$username.'" AND PostTime="'.$postTime.'"';
 		$qu = 'SELECT * FROM OpenLFG.Posts';
