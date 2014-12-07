@@ -61,11 +61,13 @@
           Username:  <input type="text" name="username" /><br /><br />
         Game Title: <input type="text" name="gtitle" /><br /><br />
         Console: <select name='consoles' id='consoles'>
-			    				<option value='Xbox One'>Xbox One</option>
-			    				<option value='Playstation 4'>Playstation 4</option>
-			    				<option value='Xbox 360'>Xbox 360</option>
-			    				<option value='Playstation 3'>Playstation 3</option>
+			    				<option value='XB1'>Xbox One</option>
+			    				<option value='PS4'>Playstation 4</option>
+			    				<option value='XB360'>Xbox 360</option>
+			    				<option value='PS3'>Playstation 3</option>
 			    				<option value='PC'>PC</option>
+			    				<option value='WiiU'>Wii U</option>
+			    				<option value='3DS'>Nintendo 3DS</option>
 			     </select>
 			     <br /><br />
 		Region: <select name='regions' id='regions'>
