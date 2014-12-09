@@ -26,6 +26,18 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+    	.mytable {
+    	width:30%;
+    	height:30%;
+    	background-color:#E8E8E8;
+    	position:fixed;
+    	margin-left:-200px; 
+    	margin-top:-150px;
+    	top:50%;
+    	left:50%;
+		}
+	</style>
   </head>
 
   <body>
