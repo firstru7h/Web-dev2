@@ -17,10 +17,51 @@
 
     <!-- Custom styles for this template -->
     <link href="css\starter-template.css" rel="stylesheet">
+	<style>
+	.error-message {color:red;
+					font-size:smaller;
+					font-style:italic;}
+	</style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
+	
+	<!-- client-side validation scripts -->
+	<script type="text/javascript">
+		function postTest() {
+			var testNode1 = document.getElementById('ptitle');
+			var testNode2 = document.getElementById('ptitle-err');
+		
+			if (testNode1.value == "") {
+			testNode2.innerHTML = "*recommended";
+			} else {
+			testNode2.innerHTML = "&nbsp;";
+			}	
+		}
+	
+		function noteTest() {
+			var testNode1 = document.getElementById('note');
+			var testNode2 = document.getElementById('note-err');
+		
+			if (testNode1.value == "") {
+			testNode2.innerHTML = "*recommended";
+			} else {
+			testNode2.innerHTML = "&nbsp;";
+			}
+		}
+	
+		function gameTest() {
+			var testNode1 = document.getElementById('gtitle');
+			var testNode2 = document.getElementById('gtitle-err');
+		
+			if (testNode1.value == "") {
+			testNode2.innerHTML = "*required field";
+			} else {
+			testNode2.innerHTML = "&nbsp;";
+			}	
+		}
+	</script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -77,12 +118,14 @@
 			    				<option value='Search All Regions'>Search All Regions</option>
 			         </select>
 			<br /><br />
-					 
-			Post Title:  <input type="text" name="ptitle" /><br /><br />
+			Post Title: <input type="text" name="ptitle" id="ptitle" onblur="postTest()"/>
+			            <p id="ptitle-err" class="error-message">&nbsp;</p>
 			
-			Description:  <input type="text" name="note" /><br /><br />
+			Description:  <input type="text" name="note" id="note" onblur="noteTest()"/>
+			              <p id="note-err" class="error-message">&nbsp;</p>
 			
-			Game Title: <input type="text" name="gtitle" /><br /><br />
+			Game Title: <input type="text" name="gtitle" id="gtitle" onblur="gameTest()"/>
+			            <p id="gtitle-err" class="error-message">&nbsp;</p>
 			
 			<input type="submit" value="search" />
 			</form>

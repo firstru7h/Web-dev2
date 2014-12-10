@@ -15,10 +15,62 @@
 
     <!-- Custom styles for this template -->
     <link href="css\starter-template.css" rel="stylesheet">
+	<style>
+	.error-message {color:red;
+					font-size:smaller;
+					font-style:italic;}
+	</style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
+	
+	<!-- client-side validation scripts -->
+	<script type="text/javascript">
+		function postTest() {
+			var testNode1 = document.getElementById('ptitle');
+			var testNode2 = document.getElementById('ptitle-err');
+		
+			if (testNode1.value == "") {
+			testNode2.innerHTML = "*required field";
+			} else {
+			testNode2.innerHTML = "&nbsp;";
+			}	
+		}
+	
+		function userTest() {
+			var testNode1 = document.getElementById('username');
+			var testNode2 = document.getElementById('username-err');
+		
+			if (testNode1.value == "") {
+			testNode2.innerHTML = "*required field";
+			} else {
+			testNode2.innerHTML = "&nbsp;";
+			}
+		}
+	
+		function gameTest() {
+			var testNode1 = document.getElementById('gtitle');
+			var testNode2 = document.getElementById('gtitle-err');
+		
+			if (testNode1.value == "") {
+			testNode2.innerHTML = "*required field";
+			} else {
+			testNode2.innerHTML = "&nbsp;";
+			}	
+		}
+		
+		function descTest() {
+			var testNode1 = document.getElementById('description');
+			var testNode2 = document.getElementById('description-err');
+		
+			if (testNode1.value == "") {
+			testNode2.innerHTML = "*recommended";
+			} else {
+			testNode2.innerHTML = "&nbsp;";
+			}	
+		}
+	</script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -57,9 +109,12 @@
         <h1>Post Message</h1>
         <p class="lead">
         <form action='submission.php'>
-        Post Title:  <input type="text" name="ptitle" /><br /><br />
-          Username:  <input type="text" name="username" /><br /><br />
-        Game Title: <input type="text" name="gtitle" /><br /><br />
+        Post Title:  <input type="text" name="ptitle" id="ptitle" onblur="postTest()"/>
+		             <p id="ptitle-err" class="error-message">&nbsp;</p>
+          Username:  <input type="text" name="username" id="username" onblur="userTest()"/>
+					 <p id="username-err" class="error-message">&nbsp;</p>
+        Game Title: <input type="text" name="gtitle" id="gtitle" onblur="gameTest()"/>
+					<p id="gtitle-err" class="error-message">&nbsp;</p>
         Console: <select name='consoles' id='consoles'>
 			    				<option value='XB1'>Xbox One</option>
 			    				<option value='PS4'>Playstation 4</option>
@@ -77,7 +132,8 @@
 			    				<option value='Other'>Other</option>
 			     </select>
 			     <br /><br />
-		Description:  <input type="text" name="description" /><br /><br />
+		Description:  <input type="text" name="description" id="description" onblur="descTest()"/>
+					  <p id="description-err" class="error-message">&nbsp;</p>
 				<input type="submit" value="post" />
 			</form>
         </p>
