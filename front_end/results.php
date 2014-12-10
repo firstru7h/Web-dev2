@@ -28,7 +28,7 @@
     <![endif]-->
     <style type="text/css">
     	.mytable {
-    	width:30%;
+    	width:70%;
     	height:30%;
     	background-color:#E8E8E8;
     	position:fixed;
