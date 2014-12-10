@@ -22,8 +22,8 @@ function createTable($whereStatements)
     ($connect = mysqli_connect("localhost", "lfg", "lfgforall", "OpenLFG")) or die('connect failed.');
     $table = mysqli_query($connect, "select * from OpenLFG.Posts".$whereStatements);
     echo "<table class='mytable' border='3px'>";
-    echo "<tr><td>PostID</td><td>Region</td><td>Platform</td><td>Game</td><td>Event</td>
-    	  <td>Username</td><td>Note</td><td>Post Time</td></tr>"; 
+    echo "<b><tr><td style='width:5%'>PostID</td><td style='width:5%'>Region</td><td style='width:5%'>Platform</td><td style='width:10%'>Game</td><td style='width:10%'>Event</td>
+    	  <td style='width:5%'>Username</td><td style='width:20%'>Note</td><td style='width:5%'>Post Time</td></tr></b>"; 
     while($row = mysqli_fetch_array($table))
     { 
         echo "<tr><td>" . htmlspecialchars($row['PostID']) . "</td><td>" . htmlspecialchars($row['Region']) . "</td><td>" 

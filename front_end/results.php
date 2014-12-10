@@ -28,11 +28,10 @@
     <![endif]-->
     <style type="text/css">
     	.mytable {
-    	width:30%;
-    	height:30%;
+    	width:70%;
     	background-color:#E8E8E8;
     	position:fixed;
-    	margin-left:-200px; 
+    	margin-left:-50px; 
     	margin-top:-150px;
     	top:50%;
     	left:50%;
