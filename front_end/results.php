@@ -31,10 +31,10 @@
     	width:100%;
     	background-color:#E8E8E8;
     	position:fixed;
-    	margin-left:-150px; 
+    	margin-left:-50px; 
     	margin-top:-150px;
     	top:50%;
-    	left:50%;
+
 		}
 	</style>
   </head>
